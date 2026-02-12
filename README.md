@@ -85,3 +85,9 @@ GCS --> PIPE --> RETRIEVER
 subgraph Response["Grounded Response Generation"]
 GEN[Answer Synthesis]
 CITE[Citation Cards]
+end
+
+RANK --> GEN --> CITE
+CITE --> WEB
+CITE --> PHONE
+
